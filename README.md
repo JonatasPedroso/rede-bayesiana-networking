@@ -12,12 +12,11 @@
 
 <div style="text-align: center;"><img src="man/figures/Hill-Climbing.gif"></div>
 
-<div style="text-align: justify;">
-	<p>A partir da imagem acima é possível interpretar que praticamente toda venda possui um milk-shake em sua composição. Também é nítido que todos os nós possuem uma ligação forte com o nó do milk-shake, o que indica que independente do cliente comprar um sanduiche, um brinde ou um prato, é fortemente apontado que seu acompanhamento será um milk-shake.</p>
-	<br/>
-	<p>Está imagem também pode indicar que o milk-shake é o ponto mais forte do restaurante de fast food, superando seu sanduíche, brinde e prato.</p>
-	<p>Realizar a plotagem da rede Bayesiana com base em meta aprendizado com gerações de redes por meio do algoritmo Hill Climbing com suas respectivas forças associadas a cada nó. Descrever quais nós são os mais influentes e menos influentes bem como interpretar com suas palavras uma conclusão sobre tais relações.</p>
-</div>
+<p style="text-align: justify;">A partir da imagem acima é possível interpretar que praticamente toda venda possui um milk-shake em sua composição. Também é nítido que todos os nós possuem uma ligação forte com o nó do milk-shake, o que indica que independente do cliente comprar um sanduiche, um brinde ou um prato, é fortemente apontado que seu acompanhamento será um milk-shake.
+<br>
+Está imagem também pode indicar que o milk-shake é o ponto mais forte do restaurante de fast food, superando seu sanduíche, brinde e prato.</p>
+
+<p style="text-align: justify;">Realizar a plotagem da rede Bayesiana com base em meta aprendizado com gerações de redes por meio do algoritmo Hill Climbing com suas respectivas forças associadas a cada nó. Descrever quais nós são os mais influentes e menos influentes bem como interpretar com suas palavras uma conclusão sobre tais relações.</p>
 
 <b style="font-size: 40px;">Código Utilizado Para Plotar Informações</b>
 
@@ -39,11 +38,7 @@ viewer(dados.vendas.hc,
 
 <div style="text-align: center;"><img src="man/figures/Bayesian-Networking.gif"></div>
 
-<div style="text-align: justify;">
-
-	<p>Com relação a imagem acima é possível compreender que o sanduíche possui uma ligação forte com a bebida e com o acompanhamento, o que indica a grande frequência de pedido acompanhados de bebidas e algum tipo de acompanhamento, além disso todos os nós possuem ligação forte com o nó do milk-shake, que indica a grande frequência de pedidos envolvendo um milk-shake em sua composição.</p>
-
-</div>
+<p style="text-align: justify;">Com relação a imagem acima é possível compreender que o sanduíche possui uma ligação forte com a bebida e com o acompanhamento, o que indica a grande frequência de pedido acompanhados de bebidas e algum tipo de acompanhamento, além disso todos os nós possuem ligação forte com o nó do milk-shake, que indica a grande frequência de pedidos envolvendo um milk-shake em sua composição.</p>
 
 <b style="font-size: 40px;">Código Utilizado Para Plotar Informações</b>
 
@@ -73,11 +68,10 @@ strength.viewer(
 
 <div style="text-align: center;"><img src="man/figures/cpquery.png"></div>
 
-<div style="text-align: justify;">
-	<p>Para cada evento dado, é calculado a probabilidade de ocorrer um certo resultado. Então, podemos concluir que, dado o evento das vendas serem maiores que 500, calcula-se qual a chance de o milk-shake ser menor ou igual a 10.000, resultando em 36%.</p>
-	<p>Na segunda situação, dado o evento das vendas serem menores que 13.500, a probabilidade da bebida e do prato serem menores ou igual a 6.000 é calculada em 0.001%.</p>
-	<p>Na terceira situação, dado que bebidas são menores que 3.300, a chance de as vendas serem iguais ou maiores que 5.100 é de 0.001% também.</p>
-</div>
+<p style="text-align: justify;">Para cada evento dado, é calculado a probabilidade de ocorrer um certo resultado. Então, podemos concluir que, dado o evento das vendas serem maiores que 500, calcula-se qual a chance de o milk-shake ser menor ou igual a 10.000, resultando em 36%.</p>
+<p style="text-align: justify;">Na segunda situação, dado o evento das vendas serem menores que 13.500, a probabilidade da bebida e do prato serem menores ou igual a 6.000 é calculada em 0.001%.</p>
+<p style="text-align: justify;">Na terceira situação, dado que bebidas são menores que 3.300, a chance de as vendas serem iguais ou maiores que 5.100 é de 0.001% também.</p>
+
 <b style="font-size: 40px;">Resultado Obtido ao Executar os comandos</b>
 
 ``` r
@@ -103,13 +97,12 @@ strength.viewer(
 
 <div style="text-align: center;"><img src="man/figures/grafico-previsão.png"></div>
 
-<div style="text-align: justify;">
-	<p>Analisando o gráfico acima, é possível identificar uma sazonalidade com relação às vendas.</p>
+<p style="text-align: justify;">Analisando o gráfico acima, é possível identificar uma sazonalidade com relação às vendas.</p>
 
-	<p>Nos primeiros 6 meses do ano, existe uma queda nas vendas com certa irregularidade, mas perto do fim do ano há uma alta nas vendas que perdura até o começo de dezembro, só então é que as vendas têm uma queda, recomeçando o ciclo e isso é perceptível nos últimos 5 anos.</p>
+<p style="text-align: justify;">Nos primeiros 6 meses do ano, existe uma queda nas vendas com certa irregularidade, mas perto do fim do ano há uma alta nas vendas que perdura até o começo de dezembro, só então é que as vendas têm uma queda, recomeçando o ciclo e isso é perceptível nos últimos 5 anos.</p>
 
-	<p>Após a análise dos dados e baseando-se na sazonalidade identificada, foi possível realizar uma previsão de que haverá uma queda nas vendas.</p>
-</div>
+<p style="text-align: justify;">Após a análise dos dados e baseando-se na sazonalidade identificada, foi possível realizar uma previsão de que haverá uma queda nas vendas.</p>
+
 
 
 <b style="font-size: 40px;">Código Utilizado Para Plotar Informações</b>
@@ -121,10 +114,7 @@ autoplot(forecast(fitTBats, 6), main = titleForecast, xlab="Tempo", ylab="Vendas
 
 <div style="text-align: center;"><img src="man/figures/taxa-de-erro.png"></div>
 
-<div style="text-align: justify;">
-	<p>A imagem acima, o MAPE (Erro Percentual Absoluto Médio), mostra a taxa de erra médio para cada um dos métodos de ajuste, sendo eles Neural, ARIMA, TBATS e Exponencial.</p>
-</div>
-
+<p style="text-align: justify;">A imagem acima, o MAPE (Erro Percentual Absoluto Médio), mostra a taxa de erra médio para cada um dos métodos de ajuste, sendo eles Neural, ARIMA, TBATS e Exponencial.</p>
 
 ``` r
 #Erro Percentual Absoluto MÃ©dio (MAPE)
@@ -140,7 +130,6 @@ barplot(dataSetMAPE,
         col="light blue",
         ylab="MAPE")
 ```
-
 
 <h3>References</h3>
 
